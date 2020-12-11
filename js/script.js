@@ -16,8 +16,8 @@ function play(){
     d2 = (Math.floor(Math.random()*100))%6 + 1;
     val = d1 + d2;
 
-    document.getElementById("d1").src=(d1 + ".png");
-    document.getElementById("d2").src=(d1 + ".png");
+    document.getElementById("d1").src=("/img/" + d1 + ".png");
+    document.getElementById("d2").src=("/img/" + d1 + ".png");
 
     if(val == 2 || vall == 3 || val == 12) t2.textContent = "PERDISTE";
     
@@ -33,8 +33,8 @@ function play(){
     d2 = (Math.floor(Math.random()*100))%6 + 1; 
     res = d1 + d2;
 
-    document.getElementById("d1").src=(d1 + ".png");
-    document.getElementById("d2").src=(d2 + ".png");
+    document.getElementById("d1").src=("/img/" + d1 + ".png");
+    document.getElementById("d2").src=("img/" + d2 + ".png");
     
     if(res == 7){
       t2.textContent = "PERDISTE";
